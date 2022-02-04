@@ -1,0 +1,39 @@
+.Projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .Projects a,
+  .Projects a:hover {
+    text-decoration: none;
+  }
+  
+  .Projects .card {
+    color: black;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .Projects .card:hover {
+    opacity: 0.7;
+  }
+  
+  .Projects .card-title {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  
+  .Projects .card-img-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .Projects .card-full-width {
+    max-width: 54rem;
+  }
+  
+  .Projects .card-half-width {
+    max-width: 27rem;
+  }

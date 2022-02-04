@@ -1,6 +1,5 @@
 import React from 'react';
 import "../styling/intro.css"
-import Me from "../images/me.JPG"
 
 const Intro = () => {
   return <div className = "intro">
