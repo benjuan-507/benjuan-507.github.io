@@ -22,7 +22,7 @@ const Intro = () => {
       </div>
             
       <div className="i-right">
-        <img src = {Me} alt = "" className = "i-image" />
+        <img src = {require('../images/me.JPG').default} alt = "" className = "i-image" />
       </div>
   </div>;
 };
