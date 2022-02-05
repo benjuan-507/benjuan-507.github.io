@@ -15,7 +15,7 @@ export const ProjectsData = [
         description: 
             "An application that recognizes if a user is raising their hand in a video call",
         url: "https://www.youtube.com/embed/gSSKGjkX1ec?start=6797",
-        img: "shinobu.png",
+        img: "giyu.png",
         cName: "card-half-width"
     },
     {
