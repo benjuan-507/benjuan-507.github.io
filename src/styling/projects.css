@@ -16,7 +16,7 @@
   }
   
   .Projects .card:hover {
-    opacity: 0.7;
+    opacity: .7;
   }
   
   .Projects .card-title {

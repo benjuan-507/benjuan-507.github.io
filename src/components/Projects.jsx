@@ -18,7 +18,7 @@ export class Projects extends Component {
               <Card className={project.cName}>
                 <Card.Img
                   variant="top"
-                  src= {require('../images/me.JPG').default}
+                  src= {require('../images/tengen.png').default}
                   alt={project.name}
                 />
                 <Card.Body>
