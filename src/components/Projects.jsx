@@ -10,6 +10,7 @@ export class Projects extends Component {
         {ProjectsData.map((project, key) => {
           return (
             <a
+              //onClick={(e,project) => {if (project.url === "")e.preventDefault()}}
               target="_blank"
               rel="noopener noreferrer"
               href={project.url}
@@ -18,7 +19,7 @@ export class Projects extends Component {
               <Card className={project.cName}>
                 <Card.Img
                   variant="top"
-                  src= {require('../images/tengen.png').default}
+                  src={require(`../images/${project.img}`).default}
                   alt={project.name}
                 />
                 <Card.Body>

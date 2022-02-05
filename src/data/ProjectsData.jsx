@@ -5,15 +5,26 @@ export const ProjectsData = [
         description:
             "A tutorial portal that allows tutors to login and upload documents for students to study in the futrue",
         
-        url: "https://www.youtube.com",
+        url: "",
+        img: "tengen.png",
         cName: "card-half-width"
     },
     {
         id: "aim-project",
-        name: "AIM-Project",
+        name: "Hands Up",
         description: 
             "An application that recognizes if a user is raising their hand in a video call",
-        url: "https://www.youtube.com",
+        url: "https://www.youtube.com/embed/gSSKGjkX1ec?start=6797",
+        img: "shinobu.png",
+        cName: "card-half-width"
+    },
+    {
+        id: "integral-calculator",
+        name: "Integral Calculator",
+        description:
+            "A calculator that reads in simple polynomial functions and finds the integral of it",
+        url: "https://github.com/benjuan-507/integral-calculator",
+        img: "shinobu.png",
         cName: "card-half-width"
     }
 
