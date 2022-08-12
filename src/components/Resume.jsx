@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import {Document, Page} from 'react-pdf';
+import resumePDF from '../pdf/BenJuan_Resume.pdf';
 
 export class Resume extends Component {
   render() {
-    return <div>This is my resume</div>;
+    return <Document file = {resumePDF}>
+      <Page pageNumber = {1} />
+    </Document>
   }
 }
 

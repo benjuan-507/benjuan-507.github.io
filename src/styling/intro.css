@@ -10,7 +10,8 @@
 
 .i-right{
     flex: 1;
-
+    display: grid;
+    height:100%
 }
 
 .i-left-wrapper{
@@ -41,9 +42,9 @@
 }
 
 .i-image{
-    width: 500px;
-    height: 500px;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 75vh;
+    margin: auto;
 }
 
 .i-title-wrapper{

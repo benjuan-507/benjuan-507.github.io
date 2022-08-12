@@ -10,18 +10,17 @@ const Intro = () => {
             <div className="i-title">
                 <div className="i-title-wrapper">
                     {/* Add more titles in the future when I get more positions */}
-                    <div className="i-title-item">Student</div>
+                    <div className="i-title-item">Software Developer</div>
                 </div>
             </div>
             <div className="i-description">
-                I am currently a senior studying computer science at UT Dallas.
-                I enjoy full stack development. 
+              I recently graduated from the University of Texas at Dallas in May 2022, where I got my Bachelors of Science in Computer Science. Currently I work as a software developer at Paycom. 
             </div>
         </div>
       </div>
             
       <div className="i-right">
-        <img src = {require('../images/me.JPG').default} alt = "" className = "i-image" />
+        <img src = {require('../images/me.jpeg').default} alt = "" className = "i-image" />
       </div>
   </div>;
 };
