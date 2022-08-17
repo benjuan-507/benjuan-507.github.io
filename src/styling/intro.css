@@ -36,7 +36,7 @@
     height: 50px;
     font-size: 30px;
     font-weight: bold;
-    color: green;
+    color: rgb(110, 94, 254);
     display: flex;
     align-items: center;
 }
@@ -52,6 +52,12 @@
     /* uncomment when I have more in wrapper */
     /* animation: move 10s ease-in-out infinite alternate */
 }
+
+.btn-resume{
+    margin-top: 50px;
+    background-color: rgb(110, 94, 254);
+    color: white;
+}    
 
 /* 
 @keyframes move {

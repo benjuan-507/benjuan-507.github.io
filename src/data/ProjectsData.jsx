@@ -24,7 +24,7 @@ export const ProjectsData = [
         description:
             "A calculator that reads in simple polynomial functions and finds the integral of it",
         url: "https://github.com/benjuan-507/integral-calculator",
-        img: "shinobu.png",
+        img: "integral.png",
         cName: "card-half-width"
     }
 
