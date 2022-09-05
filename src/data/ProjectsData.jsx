@@ -1,11 +1,11 @@
+
 export const ProjectsData = [
     {
         id: "project-share.png",
         name: "Project Share",
         description:
-            "A tutorial portal that allows tutors to login and upload documents for students to study in the futrue",
-        
-        url: "",
+            "A tutorial portal that allows tutors to login and upload documents for students to study in the futrue.\n **GitHub Repo for this project is currently unavailable**",
+    
         img: "projectShare.jpg",
         cName: "card-half-width"
     },

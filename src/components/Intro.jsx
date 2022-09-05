@@ -25,6 +25,7 @@ const Intro = () => {
 
         <div className = "logos">
             <a
+                className = "logo"
                 href = "https://github.com/benjuan-507"
                 target = "_blank"
                 rel = "noopener noreferrer"
@@ -33,21 +34,17 @@ const Intro = () => {
               </a>
             
             <a
+              className = "logo"
               href = "https://www.linkedin.com/in/bengjuan/"
               target = "_blank"
               rel = "noopener noreferrer"
               >
                 <LinkedinFilled style = {{color: "#6666FF"}}/>
             </a>
-
         </div>
-
-
       </div>
       
   
-
-
       <div className="i-right">
         <img src = {require('../images/me.jpeg').default} alt = "" className = "i-image" />
       </div>
