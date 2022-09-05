@@ -28,16 +28,10 @@
 }
 
 .i-title{
-    height: 50px;
-    overflow: hidden
-}
-
-.i-title-item{
-    height: 50px;
     font-size: 30px;
     font-weight: bold;
     color: rgb(110, 94, 254);
-    display: flex;
+    display: inline;
     align-items: center;
 }
 
@@ -54,10 +48,17 @@
 }
 
 .btn-resume{
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: rgb(110, 94, 254);
     color: white;
 }    
+
+.logos{
+    margin-left: 50px;
+    margin-top: -50px;
+    font-size: 40px;
+}
+
 
 /* 
 @keyframes move {

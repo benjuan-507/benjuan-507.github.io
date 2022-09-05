@@ -12,6 +12,7 @@
   
   .Projects .card {
     color: black;
+    margin-right: 1px;
     margin-bottom: 1rem;
     border-radius: 1rem;
   }

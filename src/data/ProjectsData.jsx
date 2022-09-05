@@ -6,7 +6,7 @@ export const ProjectsData = [
             "A tutorial portal that allows tutors to login and upload documents for students to study in the futrue",
         
         url: "",
-        img: "tengen.png",
+        img: "projectShare.jpg",
         cName: "card-half-width"
     },
     {
@@ -15,7 +15,7 @@ export const ProjectsData = [
         description: 
             "An application that recognizes if a user is raising their hand in a video call",
         url: "https://www.youtube.com/embed/gSSKGjkX1ec?start=6797",
-        img: "giyu.png",
+        img: "handsUp.png",
         cName: "card-half-width"
     },
     {
