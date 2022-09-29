@@ -3,8 +3,11 @@ import "../styling/intro.css"
 import {Button} from 'react-bootstrap'
 import{GithubFilled, LinkedinFilled} from "@ant-design/icons";
 
+
 const Intro = () => {
   return <div className = "intro">
+      <img src = {require('../images/me.JPG').default} alt = "" className = "i-image" />
+
       <div className="i-left">
         <div className="i-left-wrapper">
             <h2 className = "i-intro">Hello, my name is</h2>
@@ -44,10 +47,7 @@ const Intro = () => {
         </div>
       </div>
       
-  
-      <div className="i-right">
-        <img src = {require('../images/me.jpeg').default} alt = "" className = "i-image" />
-      </div>
+
   </div>;  
 };
 
@@ -55,4 +55,4 @@ function openResume(){
   window.open("https://github.com/benjuan-507/my_website/blob/main/public/BenJuan.pdf");
 }
 
-export default Intro;
+export default Intro
