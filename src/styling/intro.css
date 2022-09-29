@@ -22,6 +22,7 @@
 .i-intro{
     font-size: 30px;
     font-weight: 300;
+    text-align: center;
 }
 
 .i-name{
@@ -31,9 +32,8 @@
 .i-title{
     font-size: 30px;
     font-weight: bold;
-    color: rgb(110, 94, 254);
-    display: inline;
-    align-items: center;
+    color: rgb(139, 211, 255);
+    text-align: center;
 }
 
 .i-image{
@@ -44,7 +44,7 @@
     margin-right: auto;
     margin-top: 50px;
     border-radius: 50%;
-    border: 2px solid rgb(110, 94, 254);
+    border: 2px solid rgb(139, 211, 255);
     border-style: dashed;
     border-spacing: 50px;
 }
@@ -55,9 +55,18 @@
     /* animation: move 10s ease-in-out infinite alternate */
 }
 
+.i-description{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 25px;
+    width: 60%;
+    margin: 0 auto;
+}
+
 .btn-resume{
     margin-top: 20px;
-    background-color: rgb(110, 94, 254);
+    background-color:rgb(139, 211, 255);
     color: white;
 }    
 
@@ -66,6 +75,7 @@
     margin-top: -50px;
     font-size: 40px;
 }
+
 
 
 /* 

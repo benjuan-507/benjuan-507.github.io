@@ -3,6 +3,11 @@ import "../styling/intro.css"
 import {Button} from 'react-bootstrap'
 import{GithubFilled, LinkedinFilled} from "@ant-design/icons";
 
+/*
+@TODO: Allow mobile view with medai queries
+
+*/
+
 
 const Intro = () => {
   return <div className = "intro">
@@ -10,16 +15,13 @@ const Intro = () => {
 
       <div className="i-left">
         <div className="i-left-wrapper">
-            <h2 className = "i-intro">Hello, my name is</h2>
-            <h1 className = "i-name">Ben Juan </h1>
+            <h2 className = "i-intro">Hello, my name is Ben Juan!</h2>
 
-              <div>
-                  {/* Add more titles in the future when I get more positions */}
-                  <div className="i-title">Software Developer</div>
-              </div>
+            {/* Add more titles in the future when I get more positions */}
+            <div className="i-title">Software Developer based in Plano, TX</div>
 
             <div className="i-description">
-              I recently graduated from the University of Texas at Dallas in May 2022, where I got my Bachelors of Science in Computer Science. Currently I work as a software developer at Paycom. 
+              <p>I recently graduated from the University of Texas at Dallas in May 2022, where I got my Bachelors of Science in Computer Science. Currently I work as a software developer at Paycom. </p>
             </div>
           
             <Button variant = "resume" onClick = {openResume}>Résumé</Button>
@@ -33,7 +35,7 @@ const Intro = () => {
                 target = "_blank"
                 rel = "noopener noreferrer"
                 >
-                  <GithubFilled style = {{color: "#6666FF"}}/>
+                  <GithubFilled style = {{color: "#8BD3FF"}}/>
               </a>
             
             <a
@@ -42,7 +44,7 @@ const Intro = () => {
               target = "_blank"
               rel = "noopener noreferrer"
               >
-                <LinkedinFilled style = {{color: "#6666FF"}}/>
+                <LinkedinFilled style = {{color: "#8BD3FF"}}/>
             </a>
         </div>
       </div>
