@@ -1,10 +1,23 @@
 .Projects {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 25px;
+    position: relative;
+    margin-top: auto;
   }
   
+.Projects-box{
+  background: rgb(139, 211, 255);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.Projects-img{
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+}
+
   .Projects a,
   .Projects a:hover {
     text-decoration: none;

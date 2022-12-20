@@ -1,36 +1,67 @@
 import React, { Component } from 'react';
-import {Card, Container} from "react-bootstrap";
+import Carousel from "react-multi-carousel"
+import {Col, Row, Container} from "react-bootstrap";
 import {ProjectsData } from "../data/ProjectsData";
 import "../styling/projects.css";
+import 'react-multi-carousel/lib/styles.css';
 
-export class Projects extends Component {
+const responsive = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
+class Projects extends Component {
   render() {
     return (
-      <Container className="Projects">
-        {ProjectsData.map((project, key) => {
-          return (
-            <a
-              //onClick={(e,project) => {if (project.url === "")e.preventDefault()}}
-              target="_blank"
-              rel="noopener noreferrer"
-              href={project.url}
-              key={key}
-            >
-              <Card className={project.cName}>
-                <Card.Img
-                  variant="top"
-                  src={require(`../images/${project.img}`).default}
-                  alt={project.name}
-                />
-                <Card.Body>
-                  <Card.Title>{project.name}</Card.Title>
-                  <Card.Text>{project.description}</Card.Text>
-                </Card.Body>
-              </Card>
-            </a>
-          );
-        })}
+      <section className = "Projects">
+      <Container>
+        <Row>
+          <Col>
+            <div className = "Projects-box">
+              <h2>Projects</h2>
+              <Carousel responsive = {responsive} infinite = {true}>
+                {ProjectsData.map((project, index) => {
+                  return (
+                    <div key={index}>
+                      <div>
+                        <a
+                          className="proj-link"
+                          href={project.url}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <img
+                            className="Projects-img"
+                            src={require(`../images/${project.img}`).default}
+                            alt={`Proj${index}`}
+                          ></img>
+                        </a>
+                      </div>
+                      <h5 className="proj-title">{project.id}</h5>
+                      <span className="proj-desc">{project.description}</span>
+                    </div>
+                  );
+                })}
+              </Carousel>
+            </div>
+          </Col>
+        </Row>
       </Container>
+    </section>
     );
   }
 }

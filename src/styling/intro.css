@@ -1,12 +1,12 @@
 .intro{
     display: flex;
     flex-direction: column;
-    height: 25vh;
-    padding-top: 25px;
+    padding-top: .5rem;
 }
 
 .i-left{
-    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .i-right{
@@ -38,14 +38,13 @@
 
 .i-image{
     display: block;
-    height: 500px;
-    width: 500px;
+    height: 25%;
+    width: 25%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     border-radius: 50%;
     border: 2px solid rgb(139, 211, 255);
-    border-style: dashed;
+    border-style: bold;
     border-spacing: 50px;
 }
 
@@ -56,7 +55,6 @@
 }
 
 .i-description{
-    display: flex;
     font-size: 20px;
     text-align: center;
     margin-top: 25px;
@@ -66,6 +64,8 @@
 
 .btn-resume{
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-color:rgb(139, 211, 255);
     color: white;
 }    
@@ -75,6 +75,8 @@
     margin-top: -50px;
     font-size: 40px;
 }
+
+
 
 
 

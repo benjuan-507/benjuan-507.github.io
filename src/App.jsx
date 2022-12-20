@@ -3,20 +3,18 @@ import Navbar from "./components/Navbar";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects"
 import Socials from "./components/Socials"
+import "./styling/App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 const App = () => {
   return(
-  <Router>
-    <Navbar/>
-    <Routes>
-      <Route exact path="/" element={<Intro/>} />
-      <Route path="/resume" element={<Resume/>} />
-      <Route path="/projects" element={<Projects/>} />
-      <Route path="/socials" element={<Socials/>} />
-    </Routes>       
-  </Router>)
+    <div className = "app-wrapper">
+      <Navbar/>
+      <Intro></Intro>
+      <Projects></Projects>
+    </div>
+  )
 };
 
 export default App;
