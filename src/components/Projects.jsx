@@ -32,8 +32,8 @@ class Projects extends Component {
         <Row>
           <Col>
             <div className = "Projects-box">
-              <h2>Projects</h2>
-              <Carousel responsive = {responsive} infinite = {true}>
+              <h2 className = "Projects-Title">Projects</h2>
+              <Carousel responsive = {responsive} infinite = {true} renderButtonGroupOutside={true}>
                 {ProjectsData.map((project, index) => {
                   return (
                     <div key={index}>
@@ -51,8 +51,8 @@ class Projects extends Component {
                           ></img>
                         </a>
                       </div>
-                      <h5 className="proj-title">{project.id}</h5>
-                      <span className="proj-desc">{project.description}</span>
+                      <h5 className = "Projects-Name">{project.id}</h5>
+                      <span className="Projects-description">{project.description}</span>
                     </div>
                   );
                 })}

@@ -1,7 +1,7 @@
 .intro{
     display: flex;
     flex-direction: column;
-    padding-top: .5rem;
+    padding-top: 1rem;
 }
 
 .i-left{
@@ -75,6 +75,15 @@
     margin-top: -50px;
     font-size: 40px;
 }
+
+.background-image {
+    top: 10%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1200px;
+    z-index: -4;
+  }
 
 
 

@@ -2,6 +2,7 @@ import React from 'react';
 import "../styling/intro.css"
 import {Button} from 'react-bootstrap'
 import{GithubFilled, LinkedinFilled} from "@ant-design/icons";
+import background from "../images/background.svg";
 
 /*
 @TODO: Allow mobile view with medai queries
@@ -21,6 +22,8 @@ const Intro = () => {
               <p>I recently graduated from the University of Texas at Dallas in May 2022, where I got my Bachelors of Science in Computer Science. Currently I work as a software developer at Paycom. </p>
             </div>
         </div>
+
+        <img className = "background-image" src = {background} alt = "background"/>
 
         {/* <div className = "logos">
             <a
