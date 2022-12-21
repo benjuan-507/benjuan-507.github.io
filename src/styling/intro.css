@@ -46,6 +46,12 @@
     border: 2px solid rgb(139, 211, 255);
     border-style: bold;
     border-spacing: 50px;
+    cursor: pointer;
+}
+
+.i-image:hover{
+    -webkit-filter: brightness(70%);
+
 }
 
 .i-title-wrapper{

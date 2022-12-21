@@ -5,14 +5,18 @@ import{GithubFilled, LinkedinFilled} from "@ant-design/icons";
 import background from "../images/background.svg";
 
 /*
-@TODO: Allow mobile view with medai queries
+@TODO: Allow mobile view with media queries
 
 */
 
-
 const Intro = () => {
+
+  const imageClick = () => {
+    window.open("https://www.linkedin.com/in/bengjuan/")
+  }
+
   return <div className = "intro">
-      <img src = {require('../images/me.JPG').default} alt = "" className = "i-image" />
+      <img src = {require('../images/me.JPG').default} onClick = {() => imageClick()} alt = "" className = "i-image" />
 
       <div className="i-left">
         <div className="i-left-wrapper">

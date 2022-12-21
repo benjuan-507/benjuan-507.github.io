@@ -1,4 +1,3 @@
-
 export const ProjectsData = [
     {
         id: "project-share",
@@ -27,15 +26,4 @@ export const ProjectsData = [
         img: "calculator.svg",
         cName: "card-half-width"
     }
-
-
-
-
-
-
-
-
-
-
-
 ]

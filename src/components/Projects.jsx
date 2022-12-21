@@ -29,37 +29,33 @@ class Projects extends Component {
     return (
       <section className = "Projects">
       <Container>
-        <Row>
-          <Col>
-            <div className = "Projects-box">
-              <h2 className = "Projects-Title">Projects</h2>
-              <Carousel responsive = {responsive} infinite = {true} renderButtonGroupOutside={true}>
-                {ProjectsData.map((project, index) => {
-                  return (
-                    <div key={index}>
-                      <div>
-                        <a
-                          className="proj-link"
-                          href={project.url}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
-                          <img
-                            className="Projects-img"
-                            src={require(`../images/${project.img}`).default}
-                            alt={`Proj${index}`}
-                          ></img>
-                        </a>
-                      </div>
-                      <h5 className = "Projects-Name">{project.id}</h5>
-                      <span className="Projects-description">{project.description}</span>
-                    </div>
-                  );
-                })}
-              </Carousel>
-            </div>
-          </Col>
-        </Row>
+        <div className = "Projects-box">
+          <h2 className = "Projects-Title">Projects</h2>
+          <Carousel responsive = {responsive} infinite = {true} renderButtonGroupOutside={true}>
+            {ProjectsData.map((project, index) => {
+              return (
+                <div key={index}>
+                  <div>
+                    <a
+                      className="proj-link"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <img
+                        className="Projects-img"
+                        src={require(`../images/${project.img}`).default}
+                        alt={`Proj${index}`}
+                      ></img>
+                    </a>
+                  </div>
+                  <h5 className = "Projects-Name">{project.id}</h5>
+                  <span className="Projects-description">{project.description}</span>
+                </div>
+              );
+            })}
+          </Carousel>
+        </div>
       </Container>
     </section>
     );
